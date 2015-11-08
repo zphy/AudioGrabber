@@ -248,13 +248,13 @@ class FItemNat:
     
 c = raw_input('Which journal? y for Nature/ p for APS: ')
 while c=='y' or c=='p':
-    if c=='y':
+    if c=='p':
         link=raw_input('Please input link: ')
         title=raw_input('Please input title: ')
         item=FItem(link,title)
         FItem.ExtrTxt(item)
         c=raw_input('Continue?y/p/n')
-    elif c=='p':
+    elif c=='y':
         link=raw_input('Please input link: ')
         title=raw_input('Please input title: ')
         item=FItemNat(link,title)
