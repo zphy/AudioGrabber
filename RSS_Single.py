@@ -246,17 +246,17 @@ class FItemNat:
             print('.mp3 too small, removed!')
         print('.mp3 generate success!')
     
-c = 'y'
-while c=='y':
-    link=raw_input('Please input link:')
-    title=raw_input('Please input title:')
-    item=FItem(link,title)
-    FItem.ExtrTxt(item)
-    c=raw_input('Continue?y/m/n')
-    
-while c=='m':
-    link=raw_input('Please input link:')
-    title=raw_input('Please input title:')
-    item=FItemNat(link,title)
-    FItemNat.ExtrTxt(item)
-    c=raw_input('Continue?y/m/n')
+c = raw_input('Which journal? y for Nature/ p for APS: ')
+while c=='y' or c=='p':
+    if c=='y':
+        link=raw_input('Please input link: ')
+        title=raw_input('Please input title: ')
+        item=FItem(link,title)
+        FItem.ExtrTxt(item)
+        c=raw_input('Continue?y/p/n')
+    elif c=='p':
+        link=raw_input('Please input link: ')
+        title=raw_input('Please input title: ')
+        item=FItemNat(link,title)
+        FItemNat.ExtrTxt(item)
+        c=raw_input('Continue?y/p/n')
