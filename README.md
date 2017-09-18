@@ -1,4 +1,4 @@
-# AudioGraber
+# AudioGrabber
 This set of scripts reads RSS information from APS Physics online journal or Nature journals and converts them into .mp3 files. The aim is to extract News and Views type information and summaries of articles to listen on the go.
 
 General Information
